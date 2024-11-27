@@ -50,6 +50,9 @@ rustPlatform.buildRustPackage rec {
     hash = "sha256-d4KldPii8W1HcfnMSD8Fn+IGO/a3r8747APPjRCnbe8=";
   };
 
+  cargoHash = "sha256-3HRmGYerSgxu7JxmRK3KfxjfgDmMCZojzTmeyh8nbd4=";
+  useFetchCargoVendor = true;
+
   patches = [
     (substituteAll {
       src = ./fix-finding-libs.patch;
