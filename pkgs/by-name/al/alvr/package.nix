@@ -40,14 +40,14 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "alvr";
-  version = "20.11.0";
+  version = "20.11.1";
 
   src = fetchFromGitHub {
     owner = "alvr-org";
     repo = "ALVR";
     rev = "refs/tags/v${version}";
     fetchSubmodules = true; #TODO devendor openvr
-    hash = "sha256-zqeh9U0A/KHlRieq9Lf+7f04K3JG/vpE2gZ916ReXLc=";
+    hash = "sha256-02sj4d19myvkyzsfjklc8mjb4fzwljrd8bcqgx4s8w0zw7nr513f";
   };
 
   cargoLock = {
