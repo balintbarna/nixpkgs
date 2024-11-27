@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage rec {
     repo = "ALVR";
     rev = "refs/tags/v${version}";
     fetchSubmodules = true; #TODO devendor openvr
-    hash = "sha256-02sj4d19myvkyzsfjklc8mjb4fzwljrd8bcqgx4s8w0zw7nr513f";
+    hash = "sha256-boSS7eEfcKRJf5gt1LKk/DuyZEWMTun093P7mkIjUgs=";
   };
 
   cargoLock = {
