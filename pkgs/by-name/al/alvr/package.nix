@@ -50,15 +50,6 @@ rustPlatform.buildRustPackage rec {
     hash = "sha256-d4KldPii8W1HcfnMSD8Fn+IGO/a3r8747APPjRCnbe8=";
   };
 
-  cargoLock = {
-    lockFile = ./Cargo.lock;
-    outputHashes = {
-      "openxr-0.19.0" = "sha256-bnMSjJh+zjLw4Pdxr7LLm6qYAJOK7hz5xORKZ2pVcGw=";
-      "settings-schema-0.2.0" = "sha256-luEdAKDTq76dMeo5kA+QDTHpRMFUg3n0qvyQ7DkId0k=";
-      "wasm-logger-0.2.0" = "";
-    };
-  };
-
   patches = [
     (substituteAll {
       src = ./fix-finding-libs.patch;
